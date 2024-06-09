@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                
+                .nav-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: #333;
+                        padding: 0 10px;
+                }
+
+              
+                .logo {
+                        padding: 10px 10px;
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: bold;
+                }
+                .logo img {
+                        width: 100px;
+                        height: 100px;
+                }
+               
+                .nav-menu {
+                        display: flex;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                }
+
+                
+                .nav-item {
+                        padding: 10px;
+                }
+
+            
+                .nav-item a {
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                }
+
+              
+                .nav-item a:hover {
+                        background-color: #555;
+                }
+
+            
+                @media (max-width: 600px) {
+                        .nav-container {
+                                flex-direction: column;
+                        }
+
+                        .nav-menu {
+                                flex-direction: column;
+                                width: 100%;
+                        }
+
+                        .nav-item {
+                                text-align: center;
+                                width: 100%;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+
+        <div class="nav-container">
+                <a href="#" class="logo">
+                        <img src="https://st2.depositphotos.com/1810600/5838/v/450/depositphotos_58387439-stock-illustration-abstract-vector-logo.jpg" alt="">
+                </a>
+                <ul class="nav-menu">
+                        <li class="nav-item"><a href="#">Trang Chủ</a></li>
+                        <li class="nav-item"><a href="#">Tin Tức</a></li>
+                        <li class="nav-item"><a href="#">Liên Hệ</a></li>
+                        <li class="nav-item"><a href="#">Về Chúng Tôi</a></li>
+                </ul>
+        </div>
+
+</body>
+
+</html>
